@@ -20,7 +20,9 @@ export default function Experience() {
     { collapsed: true }
   );
 
-  const [url, setUrl] = useState("http://localhost:7777");
+  const [url, setUrl] = useState(
+    "https://portfolio-content-qneo4dzfd-thibault60000.vercel.app/"
+  );
 
   function reset() {
     console.log("reset");
@@ -30,7 +32,7 @@ export default function Experience() {
   function home() {
     reset();
     setTimeout(() => {
-      setUrl("http://localhost:7777");
+      setUrl("https://portfolio-content-qneo4dzfd-thibault60000.vercel.app/");
     }, 500);
   }
 
