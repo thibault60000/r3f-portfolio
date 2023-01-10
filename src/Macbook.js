@@ -2,7 +2,7 @@ import { Float, useGLTF, Html } from "@react-three/drei";
 import { useControls } from "leva";
 import Title from "./Title.js";
 
-export default function Macbook() {
+export default function Macbook({ url }) {
   const macbook = useGLTF("./macbook.gltf");
 
   const { width, height, intensity, color, rotation, position } = useControls(
@@ -35,7 +35,7 @@ export default function Macbook() {
           position={[0, 1.56, -1.4]}
           rotation-x={-0.256}
         >
-          <iframe src='https://keystone-6-frontend.vercel.app/' />
+          {url && <iframe src={url} />}
         </Html>
       </primitive>
       <Title />
