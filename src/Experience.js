@@ -21,7 +21,7 @@ export default function Experience() {
   );
 
   const [url, setUrl] = useState(
-    "https://portfolio-content-qneo4dzfd-thibault60000.vercel.app/"
+    "https://portfolio-content.vercel.app/"
   );
 
   function reset() {
@@ -32,7 +32,7 @@ export default function Experience() {
   function home() {
     reset();
     setTimeout(() => {
-      setUrl("https://portfolio-content-qneo4dzfd-thibault60000.vercel.app/");
+      setUrl("https://portfolio-content.vercel.app/");
     }, 500);
   }
 
